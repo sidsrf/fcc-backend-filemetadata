@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 })
 
-app.post('/api/getfm', upload.single('upfile'), (req, res) => {
+app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
     const f = req.file;
     res.json({ "name": f.originalname, "type": f.mimetype, "size": f.size })
 })
