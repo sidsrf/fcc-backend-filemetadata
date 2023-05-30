@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File metadata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> FCC Backend Project: File Metatadata Microservice</h1>
+    <div>
+        <form action="/api/getfm" method="post" enctype="multipart/form-data">
+            <label for="infield">File: </label><input type="file" name="upfile" id="infield">
+            <input type="submit" value="Submit">
+        </form>
+        <div>
+            Usage: Upload a file and fetch its metadata
+        </div>
+    </div>
+    <div>By Siddharth Saraf</div>
+</body>
+
+</html>
